@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package chatstream;
-option go_package = "github.com/Team-Base64/edu-crm-chat-service-slave-bot-proto";
+package slavebotgrpc;
+option go_package = "github.com/Team-Base64/slavebotgrpc";
 
 message Message {
     string text = 1;
 }
 
-service ChatStream {
+service SlaveBot {
     rpc StartChat(stream Message) returns (stream Message);
 }
