@@ -1,6 +1,6 @@
 {
   "name": "edu-crm-slave-bot-proto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GRPC generative files for slave bot at edu crm",
   "main": "slavebotts/index.d.ts",
   "scripts": {
