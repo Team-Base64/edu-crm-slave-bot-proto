@@ -1,7 +1,7 @@
 {
-  "name": "slave-bot",
+  "name": "edu-crm-slave-bot-proto",
   "version": "1.0.0",
-  "description": "GRPC generative files for slave bot",
+  "description": "GRPC generative files for slave bot at edu crm",
   "main": "slavebotts/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
