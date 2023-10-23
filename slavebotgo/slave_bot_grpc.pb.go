@@ -4,7 +4,7 @@
 // - protoc             v3.20.3
 // source: slave_bot.proto
 
-package slavebotgrpc
+package slavebotgo
 
 import (
 	context "context"
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	SlaveBot_StartChat_FullMethodName = "/slavebotgrpc.SlaveBot/StartChat"
+	SlaveBot_StartChat_FullMethodName = "/slavebotgo.SlaveBot/StartChat"
 )
 
 // SlaveBotClient is the client API for SlaveBot service.
@@ -126,7 +126,7 @@ func (x *slaveBotStartChatServer) Recv() (*Message, error) {
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var SlaveBot_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "slavebotgrpc.SlaveBot",
+	ServiceName: "slavebotgo.SlaveBot",
 	HandlerType: (*SlaveBotServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams: []grpc.StreamDesc{

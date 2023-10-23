@@ -4,29 +4,29 @@
 var grpc = require('@grpc/grpc-js');
 var slave_bot_pb = require('./slave_bot_pb.js');
 
-function serialize_slavebotgrpc_Message(arg) {
+function serialize_slavebotgo_Message(arg) {
   if (!(arg instanceof slave_bot_pb.Message)) {
-    throw new Error('Expected argument of type slavebotgrpc.Message');
+    throw new Error('Expected argument of type slavebotgo.Message');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_slavebotgrpc_Message(buffer_arg) {
+function deserialize_slavebotgo_Message(buffer_arg) {
   return slave_bot_pb.Message.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 
 var SlaveBotService = exports.SlaveBotService = {
   startChat: {
-    path: '/slavebotgrpc.SlaveBot/StartChat',
+    path: '/slavebotgo.SlaveBot/StartChat',
     requestStream: true,
     responseStream: true,
     requestType: slave_bot_pb.Message,
     responseType: slave_bot_pb.Message,
-    requestSerialize: serialize_slavebotgrpc_Message,
-    requestDeserialize: deserialize_slavebotgrpc_Message,
-    responseSerialize: serialize_slavebotgrpc_Message,
-    responseDeserialize: deserialize_slavebotgrpc_Message,
+    requestSerialize: serialize_slavebotgo_Message,
+    requestDeserialize: deserialize_slavebotgo_Message,
+    responseSerialize: serialize_slavebotgo_Message,
+    responseDeserialize: deserialize_slavebotgo_Message,
   },
 };
 

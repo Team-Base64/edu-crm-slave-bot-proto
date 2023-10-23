@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package slavebotgrpc;
-option go_package = "github.com/Team-Base64/slavebotgrpc";
+package slavebotgo;
+option go_package = "github.com/Team-Base64/edu-crm-slave-bot-proto/slavebotgo";
 
 message Message {
     string text = 1;

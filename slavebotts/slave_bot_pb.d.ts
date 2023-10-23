@@ -1,4 +1,4 @@
-// package: slavebotgrpc
+// package: slavebotgo
 // file: slave_bot.proto
 
 /* tslint:disable */

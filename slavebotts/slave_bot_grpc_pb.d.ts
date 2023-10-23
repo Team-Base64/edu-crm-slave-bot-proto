@@ -1,4 +1,4 @@
-// package: slavebotgrpc
+// package: slavebotgo
 // file: slave_bot.proto
 
 /* tslint:disable */
@@ -12,7 +12,7 @@ interface ISlaveBotService extends grpc.ServiceDefinition<grpc.UntypedServiceImp
 }
 
 interface ISlaveBotService_IStartChat extends grpc.MethodDefinition<slave_bot_pb.Message, slave_bot_pb.Message> {
-    path: "/slavebotgrpc.SlaveBot/StartChat";
+    path: "/slavebotgo.SlaveBot/StartChat";
     requestStream: true;
     responseStream: true;
     requestSerialize: grpc.serialize<slave_bot_pb.Message>;

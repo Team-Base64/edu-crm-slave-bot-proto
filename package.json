@@ -1,23 +1,23 @@
 {
-  "name": "slavebotgrpc",
+  "name": "slave-bot",
   "version": "1.0.0",
-  "description": "The proto file and its generative artifacrs for grpc communication between a chat service and slave bots",
-  "main": "index.d.ts",
+  "description": "GRPC generative files for slave bot",
+  "main": "slavebotts/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sh ./build.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Team-Base64/slavebotgrpc.git"
+    "url": "git+https://github.com/Team-Base64/edu-crm-slave-bot-proto.git"
   },
-  "author": "",
+  "author": "Leonard Pak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Team-Base64/slavebotgrpc/issues"
+    "url": "https://github.com/Team-Base64/edu-crm-slave-bot-proto/issues"
   },
-  "homepage": "https://github.com/Team-Base64/slavebotgrpc#readme",
-  "dependencies": {
+  "homepage": "https://github.com/Team-Base64/edu-crm-slave-bot-proto#readme",
+  "devDependencies": {
     "grpc_tools_node_protoc_ts": "^5.3.3",
     "grpc-tools": "^1.12.4"
   }
