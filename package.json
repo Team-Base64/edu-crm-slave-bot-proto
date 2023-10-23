@@ -4,7 +4,8 @@
   "description": "The proto file and its generative artifacrs for grpc communication between a chat service and slave bots",
   "main": "slave_bot_grpc_pb.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sh ./build.sh"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Team-Base64/slavebotgrpc/issues"
   },
-  "homepage": "https://github.com/Team-Base64/slavebotgrpc#readme"
+  "homepage": "https://github.com/Team-Base64/slavebotgrpc#readme",
+  "dependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.3",
+    "grpc-tools": "^1.12.4"
+  }
 }
